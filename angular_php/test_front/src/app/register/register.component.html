@@ -1,0 +1,72 @@
+
+<form (ngSubmit)="onRegister(f)" #f="ngForm">
+
+    <h3>Register</h3>
+
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input 
+        type="text" 
+        class="form-control"
+        ngModel
+        name="u_name"  >
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Last Name</label>
+        <input 
+        type="text" 
+        class="form-control"
+        ngModel
+        name="u_lastname"  >
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Address</label>
+        <input 
+        type="text" 
+        class="form-control"
+        ngModel
+        name="u_address"   >
+      </div>
+
+    <div class="mb-3">
+      <label class="form-label">Username</label>
+      <input 
+      type="text" 
+      class="form-control"
+      ngModel
+      name="u_username" >
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Post Number</label>
+      <input 
+      type="text" 
+      class="form-control"
+      ngModel
+      name="u_postnumber" >
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">City</label>
+      <input 
+      type="text" 
+      class="form-control"
+      ngModel
+      name="u_city" >
+    </div>
+
+    <div class="mb-3">
+      <label  class="form-label">Password</label>
+      <input 
+      type="password" 
+      class="FakePSW" 
+      class="form-control"
+      ngModel
+      name="u_password" >
+    </div>
+  <input type="submit" class="btn btn-success" value="Register">
+  <button type="button" routerLink="/login" class="btn btn-danger">Back</button>
+    
+  </form>   

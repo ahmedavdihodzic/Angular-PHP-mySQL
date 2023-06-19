@@ -1,0 +1,23 @@
+
+<form (ngSubmit)="onLogin(f)" #f="ngForm">
+    <h3>Log In</h3>
+    <div class="mb-3">
+      <label class="form-label">Username</label>
+      <input 
+      type="text" 
+      class="form-control"
+      name="u_username" 
+      ngModel>
+    </div>
+    <div class="mb-3">
+      <label  class="form-label">Password</label>
+      <input 
+      type="password" 
+      class="FakePSW" 
+      class="form-control" 
+      name="u_password" 
+      ngModel>
+    </div>
+    <button type="submit" routerLink="/welcome" class="btn btn-success">Log In</button>
+    <button type="button" routerLink="/register" class="btn btn-warning">Register</button>
+  </form>   

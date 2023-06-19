@@ -1,0 +1,38 @@
+<div class="container">
+
+<table class="table table-striped">
+  <tbody>
+
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Lastname</th>
+        <th>Username</th>
+        <th>Address</th>
+        <th>Post Number</th>
+        <th>City</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+
+    <tr *ngFor="let user of usersList">
+         <td>{{user.u_id}}</td>
+        <td>{{user.u_name}}</td> 
+        <td>{{user.u_lastname}}</td>
+        <td>{{user.u_username}}</td>
+        <td>{{user.u_address}}</td>
+        <td>{{user.u_postnumber}}</td>
+        <td>{{user.u_city}}</td> 
+        <td><button type="button" class="btn btn-warning" [routerLink]="['/update',user.u_id]">EDIT</button></td> 
+        <td><button type="button" (click)="onDelete(user.u_id)" class="btn btn-danger">DELETE</button></td>    
+    </tr>
+  </tbody>
+
+    <div style=" margin-top: 50px; display: flex; flex-direction: row; justify-content: space-around;">
+    <td><button class="btn btn-success" routerLink="/add" >ADD USER</button></td>
+    <td><button class="btn btn-success" (click)="logOut()" routerLink="/add" >LOG OUT</button></td>  
+   </div>
+
+  </table>
+
+</div>

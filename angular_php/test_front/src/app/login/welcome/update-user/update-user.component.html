@@ -1,0 +1,90 @@
+<div class="container" >
+  
+<form (ngSubmit)="onUpdate(f)" #f="ngForm">
+
+    <h3 style="display: flex; justify-content: center;">UPDATE USER</h3>
+
+    <div class="mb-3">
+        <label class="form-label strong fw-bold">Name</label>
+        <input 
+        type="text" 
+        class="form-control"
+        ngModel
+        name="u_name" >
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-bold">Last Name</label>
+        <input 
+        type="text" 
+        class="form-control"
+        ngModel
+        name="u_lastname"  >
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-bold">Address</label>
+        <input 
+        type="text" 
+        class="form-control"
+        ngModel
+        name="u_address" >
+      </div>
+
+    <div class="mb-3">
+      <label class="form-label fw-bold">Username</label>
+      <p style="color:RED; font-weight:bold;">You are not allowed to change username</p>
+    </div>
+    <div class="mb-3">
+      <label class="form-label fw-bold">Post Number</label>
+      <input 
+      type="text" 
+      class="form-control"
+      ngModel
+      name="u_postnumber" >
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label fw-bold">City</label>
+      <input 
+      type="text" 
+      class="form-control"
+      ngModel
+      name="u_city">
+    </div>
+
+    <div class="mb-3">
+      <label  class="form-label fw-bold">Old Password</label>
+      <input 
+      type="password" 
+      class="FakePSW" 
+      class="form-control"
+      ngModel
+      name="u_oldpassword" >
+    </div>
+
+    <div class="mb-3">
+        <label  class="form-label fw-bold">New Password</label>
+        <input 
+        type="password" 
+        class="FakePSW" 
+        class="form-control"
+        ngModel
+        name="u_password1" >
+      </div>
+
+      <div class="mb-3">
+        <label  class="form-label fw-bold">Confirm New Password</label>
+        <input 
+        type="password" 
+        class="FakePSW" 
+        class="form-control"
+        ngModel
+        name="u_password2"
+        >
+      </div>
+    <input type="submit" class="btn btn-success" value="Save And Exit"> 
+    <button style="margin-left: 80vh;" type="button" routerLink="/welcome" class="btn btn-danger">BACK</button>
+  </form>  
+</div>
+
